@@ -35,7 +35,7 @@ The test was made by 2 step:
 
 The results are shown in the figure below:
 <p align="center">
-<img  src="https://i.imgur.com/KEJZKug.png" width="90%" height="90%"/>
+<img  src="https://i.imgur.com/KEJZKug.png" width="100%" height="100%"/>
 </p>
 
 ## Documents
