@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hci.ale.wesnothcompanion.CharacterActivity"
+    android:background="@color/colorPrimaryLight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/text_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorCharacterActivity"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="Fighter"/>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/character_image"
+            android:layout_width="100dp"
+            android:scaleType="fitCenter"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_character_activity"
+                android:textColor="@color/textColorCharacterActivity"
+                android:text="Advances to: "/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/advances_to_container"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/race_text"
+            android:textSize="@dimen/text_size_character_activity"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorCharacterActivity"
+            android:text="Race:"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/costs_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_character_activity"
+            android:textColor="@color/textColorCharacterActivity"
+            android:text="HP: 56    Moves: 5    Cost: 25    Alignment: lawful Required XP: 60"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/desc_text"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_size_character_activity"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorCharacterActivity"
+            android:text="Young and brash, Fighters attack with a sword, and are vulnerable to more seasoned enemies. However they have the potential to become great warriors one day."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/textColorCharacterActivity"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="Attacks"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/attacks_grid_container"
+            android:layout_marginTop="10dp">
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/textColorCharacterActivity"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="Resistance"/>
+
+        <GridLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+            <TextView
+                android:textColor="@color/white"
+                android:layout_columnWeight="1"
+                android:textSize="@dimen/text_size_character_activity"
+                android:text="Attack Type"/>
+            <TextView
+                android:layout_columnWeight="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_character_activity"
+                android:text="Reistance"/>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/resistance_type_container"
+                android:layout_columnWeight="1"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/resistance_value_container"
+                android:layout_columnWeight="1"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </GridLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/textColorCharacterActivity"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="Terrain Modifiers"/>
+
+        <GridLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3">
+            <LinearLayout
+                android:layout_columnWeight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:textSize="@dimen/text_size_character_activity"
+                    android:textColor="@color/white"
+                    android:text="Terrain"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_columnWeight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size_character_activity"
+                    android:textColor="@color/white"
+                    android:text="Defense"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_columnWeight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:textSize="@dimen/text_size_character_activity"
+                    android:textColor="@color/white"
+                    android:text="Cost"/>
+
+            </LinearLayout>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3">
+
+            <LinearLayout
+                android:id="@+id/terrain_type_container"
+                android:layout_columnWeight="1"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/terrain_defense_container"
+                android:layout_columnWeight="1"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/terrain_cost_container"
+                android:layout_columnWeight="1"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </GridLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

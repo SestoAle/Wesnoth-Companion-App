@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="40dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/list_attack_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorListGroup"
+        android:textSize="@dimen/text_size_child"
+        android:text="Spada"/>
+
+    <TextView
+        android:id="@+id/list_attack_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorListGroup"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:textSize="@dimen/text_size_child"
+        android:text="7-3 ravvicinato lama"/>
+</LinearLayout>

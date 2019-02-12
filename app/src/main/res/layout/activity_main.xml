@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hci.ale.wesnothcompanion.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:tabTextColor="@android:color/white"
+                app:tabSelectedTextColor="@android:color/white"
+                android:elevation="2dp"
+                android:background="@color/colorPrimary">
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Map" />
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Characters" />
+
+            </android.support.design.widget.TabLayout>
+
+        </android.support.v4.view.ViewPager>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="15dp"
+            android:onClick="open_pane"
+            app:elevation="5dp"
+            app:srcCompat="@drawable/ic_edited_black"
+            tools:layout_editor_absoluteX="320dp"
+            tools:layout_editor_absoluteY="235dp" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_gravity="end">
+
+        <LinearLayout
+            android:id="@+id/note_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        app:hintTextAppearance="@style/TextLabel"
+                        android:hint="@string/hint_general"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        android:textColorHint="@color/textColorCharaNote">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/textArea_note"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@android:color/white"
+                            android:gravity="top|left"
+                            android:inputType="textMultiLine"
+                            android:overScrollMode="always"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollbars="vertical"
+                            android:backgroundTint="@color/white"
+                            android:paddingRight="50dp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:scrollHorizontally="false"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/clear_general"
+                        android:layout_width="@dimen/clear_white_size"
+                        android:layout_height="@dimen/clear_white_size"
+                        android:layout_marginRight="30dp"
+                        android:visibility="gone"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/ic_clear_white" />
+
+                </FrameLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:scrollbarStyle="insideInset"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
+                <LinearLayout
+                    android:id="@+id/textChara_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp">
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

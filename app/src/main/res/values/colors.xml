@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1e1311</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorPrimaryLight">#453937</color>
+    <color name="colorAccent">#fff59d</color>
+    <color name="colorAccentDark">#1b0000</color>
+    <color name="colorAccentLight">#ffffcf</color>
+    <color name="greenProgress">#558b2f</color>
+    <color name="blueProgress">#2979ff</color>
+    <color name="textColorListGroup">#ffff</color>
+    <color name="textColorListNote">#000000</color>
+    <color name="textColorCharaNote">#ffff</color>
+    <color name="textColorCampaignTitle"> @color/colorAccentLight </color>
+    <color name="textColorVictoryTitle"> #ffff </color>
+    <color name="textColorCharacterActivity">#ffff</color>
+    <color name="textColorVictory">@color/greenProgress</color>
+    <color name="textColorDefeat">#d50000</color>
+    <color name="divider">@color/textColorDefeat</color>
+    <color name="side_1">#d50000</color>
+    <color name="side_2">@color/blueProgress</color>
+    <color name="side_3">@color/greenProgress</color>
+    <color name="side_4">#ff0000</color>
+    <color name="white">#ffff</color>
+    <color name="very_low_percentage">@color/textColorDefeat</color>
+    <color name="low_percentage">#fff59d</color>
+    <color name="medium_percentage">@color/textColorCharacterActivity</color>
+    <color name="high_percentage">@color/greenProgress</color>
+</resources>

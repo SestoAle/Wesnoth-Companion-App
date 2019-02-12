@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/character_sheet"
+    android:tag="bottom_sheet"
+    android:background="@color/colorPrimaryLight"
+    android:paddingBottom="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp">
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:background="@color/colorPrimaryDark"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="3dp">
+
+        <ImageView
+            android:id="@+id/icon_group"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitEnd"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:orientation="horizontal"
+            android:paddingRight="70dp">
+            <TextView
+                android:id="@+id/list_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="Prova"
+                android:textColor="@color/textColorListGroup"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:id="@+id/flag_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/second_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/list_lvl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lvl: 1"
+                android:textColor="@color/textColorListGroup"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hp:"
+                    android:textColor="@color/textColorListGroup"
+                    android:textSize="16sp"/>
+
+                <ProgressBar
+                    android:id="@+id/list_hp"
+                    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1.5dp"
+                    android:progressTint="@color/greenProgress"
+                    android:progress="50" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="exp:"
+                    android:textColor="@color/textColorListGroup"
+                    android:textSize="16sp"/>
+
+                <ProgressBar
+                    android:id="@+id/list_exp"
+                    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:progressTint="@color/blueProgress"
+                    android:progress="50" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="90dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/moves"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorListGroup"
+                android:text="Moves: 10"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note"
+                android:textColor="@color/textColorListGroup"
+                android:textSize="@dimen/text_size_child"
+                android:paddingBottom="10dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/character_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:imeOptions="actionDone"
+                    android:textColor="@color/textColorListNote"
+                    android:background="@drawable/custom_editetxt"
+                    android:textSize="@dimen/text_size_child"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="40dp" />
+
+                <Button
+                    android:id="@+id/clear_child"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/ic_clear" />
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/view_more"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/more_button"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/text_size_view_more"
+                android:linksClickable="true">
+            </TextView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hci.ale.wesnothcompanion.MainActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cursor_container">
+        <com.hci.ale.wesnothcompanion.widget.TouchImageView
+            android:id="@+id/map_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            app:srcCompat="@mipmap/camp_1_map_1" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="127dp"
+            android:layout_marginTop="151dp"
+            android:id="@+id/cursor"
+            android:src="@drawable/ic_location"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/objectives_button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="95dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_info_black"
+        app:backgroundTint="@color/colorAccentLight"
+        app:elevation="5dp"
+        app:layout_anchor="@+id/map_image"
+        app:layout_anchorGravity="right|bottom" />
+
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        android:elevation="3dp"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

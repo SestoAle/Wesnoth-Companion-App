@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Wesnoth Companion</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="text_attack"> %d-%d %s %s</string>
+    <string name="text_moves"> Moves: %d</string>
+    <string name="text_lvl"> Liv: %s</string>
+    <string name="chara_name_note"> %s:</string>
+    <string name="open_drawer"> Nothing</string>
+    <string name="close_drawer"> Nothing</string>
+    <string name="hint_general">General notes</string>
+    <string name="bullet_objective"> \u2022 %s </string>
+    <string name="text_turn"> %d/%d </string>
+    <string name="view_more"><u>Unit description</u></string>
+    <string name="advances_to_unknown">&#160;%s(?)&#160;</string>
+    <string name="advances_to_known">&#160;<u>%s</u>&#160;</string>
+    <string name="race">Race: %s</string>
+    <string name="costs">Hp: %d    Moves: %d    Cost: %d\nAlignment: %s Required XP: %d</string>
+    <string name="percentage"> %d&#37;</string>
+</resources>

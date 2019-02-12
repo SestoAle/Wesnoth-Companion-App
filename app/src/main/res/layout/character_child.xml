@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingLeft="40dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/list_moves"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorListGroup"
+            android:paddingLeft="40dp"
+            android:paddingTop="10dp"
+            android:textSize="@dimen/text_size_child"
+            android:text="Moves: 10"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="23dp"
+            android:id="@+id/position_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_location"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="120dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/attack_container">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="55dp"
+        android:paddingTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note"
+            android:textColor="@color/textColorListGroup"
+            android:textSize="@dimen/text_size_child"
+            android:paddingBottom="10dp"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/character_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:imeOptions="actionDone"
+                android:textColor="@color/textColorListNote"
+                android:background="@drawable/custom_editetxt"
+                android:textSize="@dimen/text_size_child"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingRight="40dp" />
+
+            <Button
+                android:id="@+id/clear_child"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/ic_clear" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/view_more"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/more_button"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/text_size_view_more"
+            android:linksClickable="true">
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

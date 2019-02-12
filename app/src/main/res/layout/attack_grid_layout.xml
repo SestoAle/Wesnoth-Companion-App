@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="5">
+
+    <ImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/attack_profile"
+        android:src="@drawable/axe"
+
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/attack_name"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        android:textSize="@dimen/text_size_character_activity"
+        android:text="arcane"/>
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:id="@+id/attack_type"
+        android:layout_columnWeight="1"
+        android:textSize="@dimen/text_size_character_activity"
+        android:text="arcane"/>
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/attack_damage"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        android:textSize="@dimen/text_size_character_activity"
+        android:text="arcane"/>
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/attack_range"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center"
+        android:textSize="@dimen/text_size_character_activity"
+        android:text="arcane"/>
+
+</GridLayout>
