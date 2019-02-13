@@ -13,6 +13,8 @@ Human Computer Interaction: **Needfinding**, **Implementation** and **Usability 
 
 The app is native Android and it's Java only.
 
+You can download the **apk** from [here](https://drive.google.com/uc?id=12Tm2x7RB4jRTWdUQuTOb91rGsO2_0Enc&export=download).
+
 ## Application
 For a more pleasant interaction, the implementation follows the [Material Design](https://material.io/design/) guide-lines.
 
