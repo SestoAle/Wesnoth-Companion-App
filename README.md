@@ -47,6 +47,7 @@ A copy of the project document (italian) can be found
 A copy of the project presentation can be found
 <a href="https://github.com/SestoAle/Wesnoth-Companion-App/raw/master/documents/presentation.pdf" download="presentation.pdf">here</a>.
 
+
 ## License
 Licensed under the term of [MIT License](https://github.com/SestoAle/Wesnoth-Companion-App/blob/master/LICENSE).
 
