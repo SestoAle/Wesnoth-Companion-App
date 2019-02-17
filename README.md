@@ -33,7 +33,7 @@ The testers are the same persons interviewed in the needfinding phase.
 
 The test was made by 2 step:
 * a first step where the tester were free to use the app like they wanted;
-* and a scripted test where the tester had to satisfy some goals.
+* a scripted test where the tester had to satisfy some goals.
 
 The results are shown in the figure below:
 <p align="center">
